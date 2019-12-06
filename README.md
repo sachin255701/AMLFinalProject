@@ -4,10 +4,11 @@ Team Members:
 1. Richa Singh (University ID: 906252623)
 2. FNU Sachin (University ID: 906270534)
 
+__NOTE: We are not able to upload emmist-balanced.mat file which is EMNIST's dataset due to large file size. This dataset can be found on link http://www.itl.nist.gov/iaui/vip/cs_links/EMNIST/matlab.zip. If not able to find please send us an email on richas@vt.edu or sachin255701@vt.edu.
 
 Contents of Project:
 1. src/main.ipynb: Pyhton notebook to run the code mentioned in PDF report.
-2. src/emmist-balanced.mat: MATLAB format of EMNIST dataset.
+2. src/emmist-balanced.mat: MATLAB format of EMNIST dataset (not able to upload due to size more than 25 MB).
 3. src/adversarial_examples.py: Script to generate various adversarial examples.
 4. src/plots.py: Script to plot various analysis plots.
 5. src/train_network.py: Script to train basic and Distilled neural networks.
