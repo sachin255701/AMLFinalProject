@@ -20,7 +20,7 @@ TARGETED = False         # should we target one specific class? or just be wrong
 CONST_FACTOR = 2.0      # f>1, rate at which we increase constant, smaller better
 
 class CarliniL0:
-    def __init__(self, sess, model, input_data_shape, num_classes,
+    def __init__(self, sess, model,
                  targeted = TARGETED, learning_rate = LEARNING_RATE,
                  max_iterations = MAX_ITERATIONS, abort_early = ABORT_EARLY,
                  initial_const = INITIAL_CONST, largest_const = LARGEST_CONST,
@@ -61,8 +61,6 @@ class CarliniL0:
         self.REDUCE_CONST = reduce_const
         self.const_factor = const_factor
         self.independent_channels = independent_channels
-        self.input_data_shape = input_data_shape
-        self.num_classes = num_classes
 
         self.I_KNOW_WHAT_I_AM_DOING_AND_WANT_TO_OVERRIDE_THE_PRESOFTMAX_CHECK = False
 
@@ -86,7 +84,7 @@ class CarliniL0:
         simg = tf.Variable(np.zeros(shape,dtype=np.float32))
         original = tf.Variable(np.zeros(shape,dtype=np.float32))
         timg = tf.Variable(np.zeros(shape,dtype=np.float32))
-        tlab = tf.Variable(np.zeros((1, self.num_classes),dtype=np.float32))
+        tlab = tf.Variable(np.zeros((1, 47),dtype=np.float32))
         const = tf.compat.v1.placeholder(tf.float32, [])
 
         # and the assignment to set the variables
@@ -95,7 +93,7 @@ class CarliniL0:
         assign_simg = tf.compat.v1.placeholder(np.float32,shape)
         assign_original = tf.compat.v1.placeholder(np.float32,shape)
         assign_timg = tf.compat.v1.placeholder(np.float32,shape)
-        assign_tlab = tf.compat.v1.placeholder(np.float32,(1,self.num_classes))
+        assign_tlab = tf.compat.v1.placeholder(np.float32,(1,47))
 
         # these are the variables to initialize when we run
         set_modifier = tf.compat.v1.assign(modifier, assign_modifier)

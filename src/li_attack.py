@@ -22,7 +22,7 @@ TARGETED = True         # should we target one specific class? or just be wrong?
 CONST_FACTOR = 2.0      # f>1, rate at which we increase constant, smaller better
 
 class CarliniLi:
-    def __init__(self, sess, model, input_data_shape, num_classes,
+    def __init__(self, sess, model,
                  targeted = TARGETED, learning_rate = LEARNING_RATE,
                  max_iterations = MAX_ITERATIONS, abort_early = ABORT_EARLY,
                  initial_const = INITIAL_CONST, largest_const = LARGEST_CONST,
@@ -63,8 +63,6 @@ class CarliniLi:
         self.DECREASE_FACTOR = decrease_factor
         self.REDUCE_CONST = reduce_const
         self.const_factor = const_factor
-        self.input_data_shape = input_data_shape
-        self.num_classes = num_classes
 
         self.I_KNOW_WHAT_I_AM_DOING_AND_WANT_TO_OVERRIDE_THE_PRESOFTMAX_CHECK = False
         
@@ -87,7 +85,7 @@ class CarliniLi:
         simg = tf.compat.v1.placeholder(tf.float32, shape)
         timg = tf.compat.v1.placeholder(tf.float32, shape)
         #tlab = tf.compat.v1.placeholder(tf.float32, (1,model.num_labels))
-        tlab = tf.compat.v1.placeholder(tf.float32, (1, self.num_classes))
+        tlab = tf.compat.v1.placeholder(tf.float32, (1, 47))
         const = tf.compat.v1.placeholder(tf.float32, [])
 
         newimg = (tf.tanh(modifier + simg)/2)
