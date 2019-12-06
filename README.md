@@ -1,25 +1,21 @@
 AML Final Project
 
 Team Members:
-Richa Singh (University ID: 906252623)
-FNU Sachin (University ID: 906270534)
+1. Richa Singh (University ID: 906252623)
+2. FNU Sachin (University ID: 906270534)
 
 
 Contents of Project:
-----/src
-  |   |
-  |   |______ main.ipynb: Pyhton notebook to run the code mentioned in PDF report.
-  |   |______ emmist-balanced.mat: MATLAB format of EMNIST dataset.
-  |   |______ adversarial_examples.py: Script to generate various adversarial examples.
-  |   |______ plots.py: Script to plot various analysis plots.
-  |   |______ train_network.py: Script to train basic and Distilled neural networks.
-  |   |______ l0_attack.py: Author's code modified for our infrastructure. Contains L-0 attack.
-  |   |______ l2_attack.py: Author's code modified for our infrastructure. Contains L-2 attack.
-  |   |______ li_attack.py: Author's code modified for our infrastructure. Contains L-Infinity attack.
-  |   |______ /models: Directory that contains various trained Defensive Distillation neurall network models.
-  | 
-  |
-  |-- ProjectReport.pdf: Project report which contains all the details about project.
+1. src/main.ipynb: Pyhton notebook to run the code mentioned in PDF report.
+2. src/emmist-balanced.mat: MATLAB format of EMNIST dataset.
+3. src/adversarial_examples.py: Script to generate various adversarial examples.
+4. src/plots.py: Script to plot various analysis plots.
+5. src/train_network.py: Script to train basic and Distilled neural networks.
+6. src/l0_attack.py: Author's code modified for our infrastructure. Contains L-0 attack.
+7. src/l2_attack.py: Author's code modified for our infrastructure. Contains L-2 attack.
+8. src/li_attack.py: Author's code modified for our infrastructure. Contains L-Infinity attack.
+9. src/models: Directory that contains various trained Defensive Distillation neurall network models.
+10. ProjectReport.pdf: Project report which contains all the details about project.
   
 
 Topics targeted in Project:
@@ -36,8 +32,8 @@ Summary of Project: We have proved several claims from the papers [1], [3] and [
 
 
 Papers Referenced:
-[1] Xiaoyong Yuan, Pan He, Qile Zhu, Xiaolin Li, “Adversarial Examples: Attacks and Defenses for Deep Learning”
-[2] Ian J. Goodfellow, Jonathon Shlens & Christian Szegedy, "EXPLAINING AND HARNESSING ADVERSARIAL EXAMPLES", ICLR 2015
-[3] Nicolas Papernot, Patrick McDaniel, Xi Wu, Somesh Jha, and Ananthram Swami, "Distillation as a Defense to Adversarial Perturbations against Deep Neural Networks,"37th IEEE Symposium on Security & Privacy, IEEE 2016, San Jose, CA
-[4] Geoffrey Hinton, Oriol Vinyals, Jeff Dean, "Distilling the Knowledge in a Neural Network," arXiv:1503.02531v1 [stat.ML] 9 Mar 2015
-[5] Nicholas Carlini, David Wagner, "Towards Evaluating the Robustness of Neural Networks," arXiv:1608.04644v2 [cs.CR] 22 Mar 2017
+1. Xiaoyong Yuan, Pan He, Qile Zhu, Xiaolin Li, “Adversarial Examples: Attacks and Defenses for Deep Learning”.
+2. Ian J. Goodfellow, Jonathon Shlens & Christian Szegedy, "EXPLAINING AND HARNESSING ADVERSARIAL EXAMPLES", ICLR 2015.
+3. Nicolas Papernot, Patrick McDaniel, Xi Wu, Somesh Jha, and Ananthram Swami, "Distillation as a Defense to Adversarial Perturbations against Deep Neural Networks,"37th IEEE Symposium on Security & Privacy, IEEE 2016, San Jose, CA.
+4. Geoffrey Hinton, Oriol Vinyals, Jeff Dean, "Distilling the Knowledge in a Neural Network," arXiv:1503.02531v1 [stat.ML] 9 Mar 2015.
+5. Nicholas Carlini, David Wagner, "Towards Evaluating the Robustness of Neural Networks," arXiv:1608.04644v2 [cs.CR] 22 Mar 2017.
