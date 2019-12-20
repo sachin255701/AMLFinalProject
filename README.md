@@ -1,8 +1,8 @@
 AML Final Project
 
 Team Members:
-1. Richa Singh (University ID: 906252623)
-2. FNU Sachin (University ID: 906270534)
+1. Richa Singh
+2. FNU Sachin
 
 NOTE: We are not able to upload emmist-balanced.mat file which is EMNIST's dataset due to large file size. This dataset can be found on link http://www.itl.nist.gov/iaui/vip/cs_links/EMNIST/matlab.zip. If not able to find please send us an email on richas@vt.edu or sachin255701@vt.edu.
 
